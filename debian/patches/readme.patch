@@ -3,7 +3,7 @@ author: Michael Gilbert <mgilbert@debian.org>
 
 --- a/xml/readme.tex
 +++ b/xml/readme.tex
-@@ -960,8 +960,6 @@ corresponding \tag{group} tags.
+@@ -978,8 +978,6 @@ corresponding \tag{group} tags.
  \item 2013-06-12 - First release, text file format
  \end{itemize}
  

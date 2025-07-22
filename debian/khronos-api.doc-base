@@ -1,5 +1,5 @@
-Document: khronos-api
-Title: Khronos API Reference 
+Document: readme
+Title: Khronos API Reference
 Author: Jon Leech
 Abstract: This document describes the Khronos XML API Registry schema, and
  provides some additional information about using the registry and scripts

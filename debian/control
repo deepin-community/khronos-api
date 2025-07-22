@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Michael Gilbert <mgilbert@debian.org>
 Build-Depends:
  debhelper-compat (= 12),
- doc-base,
  python3 (>= 3.5),
  python3-lxml,
  python3-debian,
@@ -12,7 +11,7 @@ Build-Depends:
  texlive-latex-extra,
  texlive-plain-generic,
  texlive-fonts-recommended,
-Standards-Version: 4.5.0
+Standards-Version: 4.6.1
 Homepage: https://www.opengl.org/registry
 
 Package: khronos-api

@@ -3,7 +3,7 @@ description: use changelog date for timestamps
 
 --- a/xml/genheaders.py
 +++ b/xml/genheaders.py
-@@ -17,6 +17,14 @@
+@@ -6,6 +6,14 @@
  import sys, time, pdb, string, cProfile
  from reg import *
  
@@ -18,7 +18,7 @@ description: use changelog date for timestamps
  # debug - start header generation in debugger
  # dump - dump registry after loading
  # profile - enable Python profiling
-@@ -238,28 +246,28 @@ glesProtoPrefixStrings = [
+@@ -154,23 +162,23 @@ glesProtoPrefixStrings = [
  
  # Insert generation date in a comment for headers not having *GLEXT_VERSION macros
  genDateCommentString = [
@@ -44,6 +44,9 @@ description: use changelog date for timestamps
 -    format('#define GLX_GLXEXT_VERSION %s' % time.strftime('%Y%m%d')),
 +    format('#define GLX_GLXEXT_VERSION %s' % date.strftime('%Y%m%d')),
      ''
+ ]
+ # This is a bad but functional workaround for a structural problem in the scripts
+@@ -181,7 +189,7 @@ glextKHRplatformStrings = [
  ]
  # EGL_EGLEXT_VERSION is defined only in eglext.h
  eglextVersionStrings = [
