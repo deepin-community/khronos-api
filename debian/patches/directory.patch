@@ -3,7 +3,7 @@ author: Michael Gilbert <mgilbert@debian.org>
 
 --- a/xml/reg.py
 +++ b/xml/reg.py
-@@ -16,6 +16,7 @@
+@@ -5,6 +5,7 @@
  
  import io,os,re,string,sys
  from lxml import etree
@@ -11,7 +11,7 @@ author: Michael Gilbert <mgilbert@debian.org>
  
  def write(*args, **kwargs):
      file = kwargs.pop('file', sys.stdout)
-@@ -386,6 +387,8 @@ class OutputGenerator:
+@@ -375,6 +376,8 @@ class OutputGenerator:
          # Open specified output file. Not done in constructor since a
          # Generator can be used without writing to a file.
          if (self.genOpts.filename != None):
